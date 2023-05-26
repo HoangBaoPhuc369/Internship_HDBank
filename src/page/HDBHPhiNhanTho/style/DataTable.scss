@@ -1,0 +1,58 @@
+.datatable {
+    .cellAction {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    
+        .openInfullIcon {
+          color: #1F1602;
+         border-radius: 8px;
+         background-color: #FBECC6;
+         cursor: pointer;
+        }
+        
+        .checkIcon {
+        //   padding: 2px 5px;
+          border-radius: 8px;
+          font-size: 16px;
+          font-weight: 400;
+          background-color: #FBECC6;
+          color: #1F1602;
+          cursor: pointer;
+        }
+        .deleteIcon {
+            //   padding: 2px 5px;
+              border-radius: 8px;
+              font-size: 16px;
+              font-weight: 400;
+              background-color: #FBECC6;
+              color: #1F1602;
+              cursor: pointer;
+            }
+      }
+    
+    .cellWithStatus {
+        padding: 0px, 8px, 0px, 8px;
+        border-radius: 4px;
+        width: 203px;
+        text-align: center;
+        font-size: 13px;
+        background-color: #4FA800;
+        &.Primary{
+            background-color: #0090CE;
+            color: #FFFFFF;
+        }
+        &.Activated {
+            background-color: #4FA800;
+            color: #FFFFFF;
+        }
+        &.Waiting {
+            background-color: #F7B512;
+            color: black;
+        }
+        &.Deactivated {
+            background-color: #D12421;
+            color: #FFFFFF;
+        }
+    }
+}
