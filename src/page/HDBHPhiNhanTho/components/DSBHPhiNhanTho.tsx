@@ -13,6 +13,7 @@ const DSBHPhiNhanTho = () => {
       <Divider />
       <Grid py={2}>
         <Buttonn
+          gap="4px"
           bgcolor="#F0B41C"
           color="#181818"
           hoverBgcolor="#F0B41C"

@@ -20,6 +20,7 @@ const ThongTinChung = () => {
           required={true}
         />
         <Buttonn
+          gap="4px"
           ml="16px"
           startIcon={<SearchIcon />}
           label="Kiểm tra"

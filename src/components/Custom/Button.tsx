@@ -10,6 +10,7 @@ interface ButtonProps {
   m?: string;
   ml?: string;
   mr?: string;
+  gap?: string;
 }
 
 const Buttonn = (props: ButtonProps) => {
@@ -23,12 +24,19 @@ const Buttonn = (props: ButtonProps) => {
     m,
     ml,
     mr,
+    gap,
   } = props;
   return (
     <Button
       startIcon={startIcon}
       variant="contained"
       sx={{
+        boxShadow: "none",
+        borderRadius: "8px",
+        // padding: "0px 24px 0px 20px",
+        height: "56px",
+        widows: "155px",
+        gap: gap,
         mr: mr,
         ml: ml,
         m: m,
