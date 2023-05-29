@@ -3,6 +3,9 @@ import { Box, Divider, Typography } from "@mui/material";
 import ThongTinChung from "./ThongTinChung";
 import ThongTinKhachHang from "./ThongTinKhachHang";
 import ThongTinTaiSanSanPhamBH from "./ThongTinTaiSanSanPhamBH";
+import ThongTinNgoaiLe from "./ThongTinNgoaiLe";
+import ThongTinCBTuVanTT from "./ThongTinCBTuVanTT";
+import BenThuHuong from "./BenThuHuong";
 const HDTaoMoiHopDong = () => {
   return (
     <Box p={2} bgcolor={"white"} color={"black"} borderRadius={2}>
@@ -13,6 +16,9 @@ const HDTaoMoiHopDong = () => {
       <ThongTinChung />
       <ThongTinKhachHang />
       <ThongTinTaiSanSanPhamBH />
+      <ThongTinNgoaiLe />
+      <ThongTinCBTuVanTT />
+      <BenThuHuong />
     </Box>
   );
 };

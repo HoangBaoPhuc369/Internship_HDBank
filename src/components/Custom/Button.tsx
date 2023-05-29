@@ -11,6 +11,10 @@ interface ButtonProps {
   ml?: string;
   mr?: string;
   gap?: string;
+  h?: string;
+  w?: string;
+  fs?: number;
+  fw?: number | string;
 }
 
 const Buttonn = (props: ButtonProps) => {
@@ -25,17 +29,23 @@ const Buttonn = (props: ButtonProps) => {
     ml,
     mr,
     gap,
+    w,
+    h,
+    fs,
+    fw,
   } = props;
   return (
     <Button
       startIcon={startIcon}
       variant="contained"
       sx={{
+        fontSize: fs,
+        fontWeight: fw,
+        textTransform: "none",
         boxShadow: "none",
         borderRadius: "8px",
-        // padding: "0px 24px 0px 20px",
-        height: "56px",
-        widows: "155px",
+        height: h,
+        widows: w,
         gap: gap,
         mr: mr,
         ml: ml,
@@ -45,6 +55,7 @@ const Buttonn = (props: ButtonProps) => {
         ":hover": {
           bgcolor: hoverBgcolor,
           color: hoverColor,
+          boxShadow: "none",
         },
       }}
     >

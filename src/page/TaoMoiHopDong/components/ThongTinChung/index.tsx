@@ -1,4 +1,3 @@
-import React from "react";
 import SearchIcon from "@mui/icons-material/Search";
 import TextFieldd from "../../../../components/Custom/TextField";
 import ClearIcon from "@mui/icons-material/Clear";
@@ -20,6 +19,9 @@ const ThongTinChung = () => {
           required={true}
         />
         <Buttonn
+          fs={18}
+          h="56px"
+          w="155px"
           gap="4px"
           ml="16px"
           startIcon={<SearchIcon />}

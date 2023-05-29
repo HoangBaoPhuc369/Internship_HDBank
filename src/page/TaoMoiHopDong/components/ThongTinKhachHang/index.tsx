@@ -1,4 +1,4 @@
-import { Box, Grid, Typography } from "@mui/material";
+import { Box, Divider, Grid, Typography } from "@mui/material";
 import TextFieldd from "../../../../components/Custom/TextField";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 const ThongTinKhachHang = () => {
@@ -17,7 +17,7 @@ const ThongTinKhachHang = () => {
           required={true}
         />
       </Grid>
-      <Grid item pt={2} display={"flex"} alignItems={"center"}>
+      <Grid item height={"72px"} pt={2} display={"flex"} alignItems={"center"}>
         <TextFieldd
           w="344px"
           mr="16px"
@@ -38,6 +38,9 @@ const ThongTinKhachHang = () => {
           iconEnd={<KeyboardArrowDownIcon />}
           required={true}
         />
+      </Grid>
+      <Grid mt={"40px"} mb={"16px"}>
+        <Divider />
       </Grid>
     </Box>
   );

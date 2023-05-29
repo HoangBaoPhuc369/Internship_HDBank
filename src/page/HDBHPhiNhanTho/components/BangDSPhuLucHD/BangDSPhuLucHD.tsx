@@ -14,14 +14,14 @@ import AddIcon from "@mui/icons-material/Add";
 import Buttonn from "../../../../components/Custom/Button";
 import SendIcon from "@mui/icons-material/Send";
 
-const BangDSBHPhiNhanTho = () => {
+const BangDSPhuLucHD = () => {
   const rows: GridRowsProp = [
     {
       id: 1,
       col2: "6221376671",
       col3: "Nguyễn Văn A",
       col4: "BH cho TSDB",
-      col5: "Bảo hiểm cháy nổ bắt buộc",
+      col5: "Bảo hiểm hỏa hoạn và các rủi ro đặc biệt",
       col6: "1,000,000,000.00",
       col7: "50,000.00",
       col8: "30/01/2023",
@@ -68,28 +68,28 @@ const BangDSBHPhiNhanTho = () => {
     },
     {
       field: "col6",
-      headerName: "Số tiền BH",
+      headerName: "Số tiền BH bổ sung",
       width: 145.5,
       sortable: false,
       headerClassName: "super-app-theme--header",
     },
     {
       field: "col7",
-      headerName: "Phí",
+      headerName: "Phí bổ sung",
       width: 145.5,
       sortable: false,
       headerClassName: "super-app-theme--header",
     },
     {
       field: "col8",
-      headerName: "Từ ngày",
+      headerName: "Ngày nộp phí",
       width: 145.5,
       sortable: false,
       headerClassName: "super-app-theme--header",
     },
     {
       field: "col9",
-      headerName: "Đến ngày",
+      headerName: "Ngày hết hạn",
       width: 145.5,
       sortable: false,
       headerClassName: "super-app-theme--header",
@@ -174,27 +174,21 @@ const BangDSBHPhiNhanTho = () => {
   ];
 
   return (
-    <Box p={2} mt={3} bgcolor={"white"} color={"black"} borderRadius={2}>
+    <Box
+      p={2}
+      bgcolor={"white"}
+      mt={4}
+      mb={10}
+      pt={4}
+      color={"black"}
+      borderRadius={2}
+    >
       <Typography fontSize={28} fontWeight={600} color={"#3E3C39"}>
-        Danh sách các HĐBH Phi nhân thọ chính
+        Danh sách các phụ lục HĐ
       </Typography>
       <Divider />
+
       <Grid py={2}>
-        <Buttonn
-          fs={18}
-          fw={"400px"}
-          w="170px"
-          h="56px"
-          gap="4px"
-          bgcolor="#F0B41C"
-          color="#181818"
-          hoverBgcolor="#F0B41C"
-          hoverColor="#181818"
-          label="Thêm mới"
-          startIcon={<AddIcon />}
-        />
-      </Grid>
-      <Grid>
         <Box width={"100%"} className="datatable">
           <DataGrid
             disableColumnMenu
@@ -212,4 +206,4 @@ const BangDSBHPhiNhanTho = () => {
   );
 };
 
-export default BangDSBHPhiNhanTho;
+export default BangDSPhuLucHD;
