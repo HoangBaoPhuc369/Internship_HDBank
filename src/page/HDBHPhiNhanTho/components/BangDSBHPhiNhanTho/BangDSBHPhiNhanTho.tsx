@@ -203,6 +203,8 @@ const BangDSBHPhiNhanTho = () => {
             sx={{
               "& .super-app-theme--header": {
                 backgroundColor: "#EAEEF2",
+                fontSize: "16px",
+                fontWeight: 600,
               },
             }}
           />
