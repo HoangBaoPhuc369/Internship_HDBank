@@ -9,35 +9,37 @@ import LogoutSection from "./LogoutSection";
 
 const Header = () => {
   return (
-    <Box
-      sx={{
-        bgcolor: "white",
-        display: "flex",
-        alignItems: "center",
-      }}
-    >
-      <Box sx={{ flexGrow: 1 }}>
-        <Logo />
+    <>
+      <Box
+        sx={{
+          bgcolor: "white",
+          display: "flex",
+          alignItems: "center",
+        }}
+      >
+        <Box sx={{ flexGrow: 1 }}>
+          <Logo />
+        </Box>
+        <Box sx={{ flexGrow: 1 }}>
+          <MarqueeSection />
+        </Box>
+        <Box>
+          <IconSearch />
+        </Box>
+        <Box>
+          <ProfileSection />
+        </Box>
+        <Box>
+          <InfoSection />
+        </Box>
+        <Box>
+          <NotificationSection />
+        </Box>
+        <Box>
+          <LogoutSection />
+        </Box>
       </Box>
-      <Box sx={{ flexGrow: 1 }}>
-        <MarqueeSection />
-      </Box>
-      <Box>
-        <IconSearch />
-      </Box>
-      <Box>
-        <ProfileSection />
-      </Box>
-      <Box>
-        <InfoSection />
-      </Box>
-      <Box>
-        <NotificationSection />
-      </Box>
-      <Box>
-        <LogoutSection />
-      </Box>
-    </Box>
+    </>
   );
 };
 

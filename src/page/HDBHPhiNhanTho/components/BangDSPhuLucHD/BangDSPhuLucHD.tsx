@@ -7,12 +7,12 @@ import {
   Typography,
 } from "@mui/material";
 import { DataGrid, GridColDef, GridRowsProp } from "@mui/x-data-grid";
-import OpenInFullIcon from "@mui/icons-material/OpenInFull";
-import CheckIcon from "@mui/icons-material/Check";
-import DeleteIcon from "@mui/icons-material/Delete";
+import RemoveRedEyeIcon from '@mui/icons-material/RemoveRedEye';
 import AddIcon from "@mui/icons-material/Add";
 import Buttonn from "../../../../components/Custom/Button";
 import SendIcon from "@mui/icons-material/Send";
+import CheckCircleIcon from '@mui/icons-material/CheckCircle';
+import CancelIcon from '@mui/icons-material/Cancel';
 
 const BangDSPhuLucHD = () => {
   const rows: GridRowsProp = [
@@ -33,71 +33,71 @@ const BangDSPhuLucHD = () => {
   const columns: GridColDef[] = [
     {
       field: "id",
-      headerName: "No.",
-      width: 50,
+      headerName: "STT",
+      flex: 0.5,
       sortable: false,
       headerClassName: "super-app-theme--header",
     },
     {
       field: "col2",
       headerName: "Số HĐ",
-      width: 145.5,
+      flex: 1,
       sortable: false,
       headerClassName: "super-app-theme--header",
     },
     {
       field: "col3",
       headerName: "Tên KH",
-      width: 145.5,
+      flex: 1,
       sortable: false,
       headerClassName: "super-app-theme--header",
     },
     {
       field: "col4",
       headerName: "Đối tượng BH",
-      width: 145.5,
+       flex: 0.9,
       sortable: false,
       headerClassName: "super-app-theme--header",
     },
     {
       field: "col5",
       headerName: "Loại BH",
-      width: 290,
+      flex: 1.5,
       sortable: false,
       headerClassName: "super-app-theme--header",
     },
     {
       field: "col6",
-      headerName: "Số tiền BH bổ sung",
-      width: 145.5,
+      headerName: "Số tiền BH",
+       flex: 1,
       sortable: false,
       headerClassName: "super-app-theme--header",
     },
     {
       field: "col7",
-      headerName: "Phí bổ sung",
-      width: 145.5,
+      headerName: "Phí",
+       flex: 0.7,
       sortable: false,
       headerClassName: "super-app-theme--header",
     },
     {
       field: "col8",
-      headerName: "Ngày nộp phí",
-      width: 145.5,
+      headerName: "Từ ngày",
+       flex: 0.7,
       sortable: false,
       headerClassName: "super-app-theme--header",
     },
     {
       field: "col9",
-      headerName: "Ngày hết hạn",
-      width: 145.5,
+      headerName: "Đến ngày",
+       flex: 1,
       sortable: false,
       headerClassName: "super-app-theme--header",
     },
     {
       field: "status",
       headerName: "Trạng thái",
-      width: 145.5,
+       flex: 1,
       sortable: false,
       headerClassName: "super-app-theme--header",
       renderCell: (params) => {
@@ -118,55 +118,27 @@ const BangDSPhuLucHD = () => {
     },
 
     {
-      // maxWidth: 450,
+
       field: "action",
-      headerName: "Function",
-      width: 450,
+      headerName: "Thao Tác",
+      flex: 2,
       sortable: false,
       headerClassName: "super-app-theme--header",
       renderCell: (params) => {
         return (
           <div className="cellAction">
-            <IconButton className="openInfullIcon" sx={{ p: "6px" }}>
-              <OpenInFullIcon fontSize="small" />
+           <IconButton className="openInfullIcon" sx={{ p: "6px" }}>
+              <RemoveRedEyeIcon fontSize="small" />
             </IconButton>
-
-            <div>
-              <Buttonn
-                w="94px"
-                h="32px"
-                startIcon={<CheckIcon />}
-                label="Duyệt"
-                bgcolor="#FBECC6"
-                color="#1F1602"
-                hoverBgcolor="#FBECC6"
-                hoverColor="#1F1602"
-              />
-            </div>
-            <div>
-              <Buttonn
-                w="94px"
-                h="32px"
-                startIcon={<DeleteIcon />}
-                label="Từ chối"
-                bgcolor="#FBECC6"
-                color="#1F1602"
-                hoverBgcolor="#FBECC6"
-                hoverColor="#1F1602"
-              />
-            </div>
-            <div>
-              <Buttonn
-                w="94px"
-                h="32px"
-                startIcon={<SendIcon />}
-                label="Chuyển duyệt"
-                bgcolor="#FBECC6"
-                color="#1F1602"
-                hoverBgcolor="#FBECC6"
-                hoverColor="#1F1602"
-              />
-            </div>
+            <IconButton className="openInfullIcon" sx={{ p: "6px" }}>
+              <SendIcon fontSize="small" />
+            </IconButton>
+            <IconButton className="openInfullIcon" sx={{ p: "6px" }}>
+              <CheckCircleIcon fontSize="small" />
+            </IconButton>
+             <IconButton className="openInfullIcon" sx={{ p: "6px" }}>
+              <CancelIcon fontSize="small" />
+            </IconButton>
           </div>
         );
       },
@@ -177,7 +149,7 @@ const BangDSPhuLucHD = () => {
     <Box
       p={2}
       bgcolor={"white"}
-      mt={4}
+      mt={2}
       mb={10}
       pt={4}
       color={"black"}
@@ -197,6 +169,7 @@ const BangDSPhuLucHD = () => {
             sx={{
               "& .super-app-theme--header": {
                 backgroundColor: "#EAEEF2",
+                
               },
             }}
           />

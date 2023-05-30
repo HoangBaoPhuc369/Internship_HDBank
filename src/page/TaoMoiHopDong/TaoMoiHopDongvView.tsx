@@ -4,7 +4,7 @@ import { Box } from "@mui/material";
 
 const TaoMoiHopDongView = () => {
   return (
-    <Box m={2}>
+    <Box m={2} mt={9.5}>
       <HDTaoMoiHopDong />
     </Box>
   );
