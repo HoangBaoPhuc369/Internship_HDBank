@@ -13,10 +13,17 @@ import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import Buttonn from "../../../../components/Custom/Button";
 import SearchIcon from "@mui/icons-material/Search";
 import ClearIcon from "@mui/icons-material/Clear";
-import { DateField } from "@mui/x-date-pickers";
 import DateFieldd from "../../../../components/Custom/DateField";
+import { useState } from "react";
 
 const ThongTinTaiSanSanPhamBH = () => {
+  const [show, setShow] = useState(false);
+  const isClickShow = () => {
+    setShow(true);
+  };
+  const isClickClose = () => {
+    setShow(false);
+  };
   return (
     <Box>
       <Grid xs={12} item pb={2}>
@@ -68,10 +75,6 @@ const ThongTinTaiSanSanPhamBH = () => {
           gap="4px"
           startIcon={<SearchIcon />}
           label="Kiểm tra"
-          color="#181818"
-          bgcolor="#F0B41C"
-          hoverColor="#181818"
-          hoverBgcolor="#F0B41C"
         />
       </Grid>
       {/* 8 */}
@@ -115,11 +118,13 @@ const ThongTinTaiSanSanPhamBH = () => {
             name="row-radio-buttons-group"
           >
             <FormControlLabel
+              onClick={isClickClose}
               value="once"
               control={<Radio />}
               label="Đóng phí 1 lần"
             />
             <FormControlLabel
+              onClick={isClickShow}
               value="many"
               control={<Radio />}
               label="Đóng phí nhiều lần" /**Khi click vào sẽ hiện btn Thêm kỳ đóng*/
@@ -128,19 +133,17 @@ const ThongTinTaiSanSanPhamBH = () => {
         </FormControl>
       </Grid>
 
-      <Grid xs={12} item pt={2} display={"flex"} alignItems={"center"}>
-        <Buttonn
-          fs={18}
-          h="56px"
-          w="155px"
-          gap="4px"
-          label="Thêm kỳ đóng phí"
-          color="#181818"
-          bgcolor="#F0B41C"
-          hoverColor="#181818"
-          hoverBgcolor="#F0B41C"
-        />
-      </Grid>
+      {show && (
+        <Grid xs={12} item pt={2} display={"flex"} alignItems={"center"}>
+          <Buttonn
+            fs={18}
+            h="56px"
+            w="155px"
+            gap="4px"
+            label="Thêm kỳ đóng phí"
+          />
+        </Grid>
+      )}
       {/* 11 */}
       <Grid xs={12} item pt={2} display={"flex"} alignItems={"center"}>
         <DateFieldd label="Ngày đóng phí" />
