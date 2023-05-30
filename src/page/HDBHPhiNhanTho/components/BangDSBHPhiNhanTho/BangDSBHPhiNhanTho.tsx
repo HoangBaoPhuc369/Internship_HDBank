@@ -1,17 +1,11 @@
-import {
-  Box,
-  Divider,
-  Grid,
-  IconButton,
-  Typography,
-} from "@mui/material";
+import { Box, Divider, Grid, IconButton, Typography } from "@mui/material";
 import { DataGrid, GridColDef, GridRowsProp } from "@mui/x-data-grid";
-import RemoveRedEyeIcon from '@mui/icons-material/RemoveRedEye';
+import RemoveRedEyeIcon from "@mui/icons-material/RemoveRedEye";
 import AddIcon from "@mui/icons-material/Add";
 import Buttonn from "../../../../components/Custom/Button";
 import SendIcon from "@mui/icons-material/Send";
-import CheckCircleIcon from '@mui/icons-material/CheckCircle';
-import CancelIcon from '@mui/icons-material/Cancel';
+import CheckCircleIcon from "@mui/icons-material/CheckCircle";
+import CancelIcon from "@mui/icons-material/Cancel";
 const BangDSBHPhiNhanTho = () => {
   const rows: GridRowsProp = [
     {
@@ -53,7 +47,7 @@ const BangDSBHPhiNhanTho = () => {
     {
       field: "col4",
       headerName: "Đối tượng BH",
-       flex: 0.9,
+      flex: 0.9,
       sortable: false,
       headerClassName: "super-app-theme--header",
     },
@@ -67,35 +61,35 @@ const BangDSBHPhiNhanTho = () => {
     {
       field: "col6",
       headerName: "Số tiền BH",
-       flex: 1,
+      flex: 1,
       sortable: false,
       headerClassName: "super-app-theme--header",
     },
     {
       field: "col7",
       headerName: "Phí",
-       flex: 0.7,
+      flex: 0.7,
       sortable: false,
       headerClassName: "super-app-theme--header",
     },
     {
       field: "col8",
       headerName: "Từ ngày",
-       flex: 0.7,
+      flex: 0.7,
       sortable: false,
       headerClassName: "super-app-theme--header",
     },
     {
       field: "col9",
       headerName: "Đến ngày",
-       flex: 1,
+      flex: 1,
       sortable: false,
       headerClassName: "super-app-theme--header",
     },
     {
       field: "status",
       headerName: "Trạng thái",
-       flex: 1,
+      flex: 1,
       sortable: false,
       headerClassName: "super-app-theme--header",
       renderCell: (params) => {
@@ -116,7 +110,6 @@ const BangDSBHPhiNhanTho = () => {
     },
 
     {
-
       field: "action",
       headerName: "Thao Tác",
       flex: 2,
@@ -125,7 +118,7 @@ const BangDSBHPhiNhanTho = () => {
       renderCell: (params) => {
         return (
           <div className="cellAction">
-           <IconButton className="openInfullIcon" sx={{ p: "6px" }}>
+            <IconButton className="openInfullIcon" sx={{ p: "6px" }}>
               <RemoveRedEyeIcon fontSize="small" />
             </IconButton>
             <IconButton className="openInfullIcon" sx={{ p: "6px" }}>
@@ -134,7 +127,7 @@ const BangDSBHPhiNhanTho = () => {
             <IconButton className="openInfullIcon" sx={{ p: "6px" }}>
               <CheckCircleIcon fontSize="small" />
             </IconButton>
-             <IconButton className="openInfullIcon" sx={{ p: "6px" }}>
+            <IconButton className="openInfullIcon" sx={{ p: "6px" }}>
               <CancelIcon fontSize="small" />
             </IconButton>
           </div>
@@ -158,7 +151,6 @@ const BangDSBHPhiNhanTho = () => {
           label="Thêm mới"
           startIcon={<AddIcon />}
           href="/taomoihopdong"
-
         />
       </Grid>
       <Grid>

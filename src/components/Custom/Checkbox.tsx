@@ -1,12 +1,11 @@
 import { Checkbox, FormControlLabel } from "@mui/material";
 
-
 interface CheckboxProps {
   label: string;
 }
 
 const CheckBox = (props: CheckboxProps) => {
-  const { label} = props;
+  const { label } = props;
   return (
     <FormControlLabel
       control={
