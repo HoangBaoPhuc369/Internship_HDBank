@@ -73,7 +73,7 @@ const BenThuHuong = () => {
           h="56px"
           w="155px"
           gap="4px"
-          label="Lưu"
+          label="Chuyển duyệt"
           startIcon={<SendIcon />}
           color="#181818"
           bgcolor="#F0B41C"

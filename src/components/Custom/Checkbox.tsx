@@ -3,15 +3,16 @@ import React from "react";
 
 interface CheckboxProps {
   label: string;
+  required: boolean;
 }
 
 const CheckBox = (props: CheckboxProps) => {
-  const { label } = props;
+  const { label, required } = props;
   return (
     <FormControlLabel
-      required
       control={
         <Checkbox
+          required={required}
           sx={{
             color: "#181818",
             "&.Mui-checked": {

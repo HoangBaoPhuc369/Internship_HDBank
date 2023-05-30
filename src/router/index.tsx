@@ -2,6 +2,7 @@ import { useRoutes } from "react-router-dom";
 import MainLayout from "../layout/MainLayout";
 import DSHDBHPhiNhanThoPage from "../page/HDBHPhiNhanTho";
 import TaoMoiHopDong from "../page/TaoMoiHopDong";
+import TaoMoiPhuLucHopDong from "../page/TaoMoiPhuLucHD";
 
 const Router = () => {
   const elements = useRoutes([
@@ -16,6 +17,10 @@ const Router = () => {
         {
           path: "taomoihopdongdev",
           element: <TaoMoiHopDong />,
+        },
+        {
+          path: "taomoiphuluchddev",
+          element: <TaoMoiPhuLucHopDong />,
         },
       ],
     },
