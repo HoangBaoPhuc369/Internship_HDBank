@@ -54,10 +54,6 @@ const BangTaoMoiPhuLuc = () => {
               ml="16px"
               startIcon={<SearchIcon />}
               label="Kiểm tra"
-              color="#181818"
-              bgcolor="#F0B41C"
-              hoverColor="#181818"
-              hoverBgcolor="#F0B41C"
             />
           </Grid>
           <Grid item pt={2}>
@@ -69,7 +65,7 @@ const BangTaoMoiPhuLuc = () => {
             <TextFieldd label="Chi nhánh/PGD CBNV trực thuộc" required={true} />
           </Grid>
           <Grid item pt={5}>
-            <CheckBox label="Thay đổi bên thụ hưởng" required={false} />
+            <CheckBox label="Thay đổi bên thụ hưởng" />
           </Grid>
         </Grid>
       </Box>
@@ -95,10 +91,6 @@ const BangTaoMoiPhuLuc = () => {
               gap="4px"
               label="Lưu"
               startIcon={<CheckIcon />}
-              color="#181818"
-              bgcolor="#F0B41C"
-              hoverColor="#181818"
-              hoverBgcolor="#F0B41C"
             />
             <Buttonn
               mr="16px"
@@ -108,22 +100,8 @@ const BangTaoMoiPhuLuc = () => {
               gap="4px"
               label="Chuyển duyệt"
               startIcon={<SendIcon />}
-              color="#181818"
-              bgcolor="#F0B41C"
-              hoverColor="#181818"
-              hoverBgcolor="#F0B41C"
             />
-            <Buttonn
-              fs={18}
-              h="56px"
-              w="155px"
-              gap="4px"
-              label="Quay lại"
-              color="#DCA20F"
-              bgcolor="#FFFFFF"
-              hoverColor="#DCA20F"
-              hoverBgcolor="#FFFFFF"
-            />
+            <Buttonn fs={18} h="56px" w="155px" gap="4px" label="Quay lại" />
           </Grid>
         </Grid>
       </Box>

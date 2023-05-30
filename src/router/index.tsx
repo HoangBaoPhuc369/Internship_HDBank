@@ -11,15 +11,15 @@ const Router = () => {
       element: <MainLayout />,
       children: [
         {
-          path: "dshbphinhanthodev",
+          path: "dshbphinhantho",
           element: <DSHDBHPhiNhanThoPage />,
         },
         {
-          path: "taomoihopdongdev",
+          path: "taomoihopdong",
           element: <TaoMoiHopDong />,
         },
         {
-          path: "taomoiphuluchddev",
+          path: "taomoiphuluchd",
           element: <TaoMoiPhuLucHopDong />,
         },
       ],

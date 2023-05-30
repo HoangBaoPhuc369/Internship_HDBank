@@ -3,7 +3,7 @@ import React from "react";
 import DSBHPhiNhanTho from "./components/DSBHPhiNhanTho";
 const BaoHiemPhiNhanThoView = () => {
   return (
-    <Box m={2}>
+    <Box m={2} mt={9.5}>
       <DSBHPhiNhanTho />
     </Box>
   );

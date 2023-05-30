@@ -1,10 +1,6 @@
 import { Button } from "@mui/material";
 
 interface ButtonProps {
-  bgcolor?: string;
-  color?: string;
-  hoverBgcolor?: string;
-  hoverColor?: string;
   label?: string;
   startIcon?: any;
   m?: string;
@@ -15,25 +11,11 @@ interface ButtonProps {
   w?: string;
   fs?: number;
   fw?: number | string;
+  href?: string;
 }
 
 const Buttonn = (props: ButtonProps) => {
-  const {
-    bgcolor,
-    color,
-    hoverBgcolor,
-    hoverColor,
-    label,
-    startIcon,
-    m,
-    ml,
-    mr,
-    gap,
-    w,
-    h,
-    fs,
-    fw,
-  } = props;
+  const { label, startIcon, m, ml, mr, gap, w, h, fs, fw, href } = props;
   return (
     <Button
       startIcon={startIcon}
@@ -50,14 +32,15 @@ const Buttonn = (props: ButtonProps) => {
         mr: mr,
         ml: ml,
         m: m,
-        bgcolor: bgcolor,
-        color: color,
+        color: "#181818",
+        backgroundColor: "#F0B41C",
         ":hover": {
-          bgcolor: hoverBgcolor,
-          color: hoverColor,
+          bgcolor: "#F0B41C",
+          color: "#181818",
           boxShadow: "none",
         },
       }}
+      href={href}
     >
       {label}
     </Button>

@@ -49,10 +49,7 @@ const BenThuHuong = () => {
           w="155px"
           gap="4px"
           label="Phụ lục HĐ"
-          color="#181818"
-          bgcolor="#F0B41C"
-          hoverColor="#181818"
-          hoverBgcolor="#F0B41C"
+         
         />
         <Buttonn
           fs={18}
@@ -62,10 +59,7 @@ const BenThuHuong = () => {
           gap="4px"
           label="Lưu"
           startIcon={<CheckIcon />}
-          color="#181818"
-          bgcolor="#F0B41C"
-          hoverColor="#181818"
-          hoverBgcolor="#F0B41C"
+        
         />
         <Buttonn
           mr="16px"
@@ -75,10 +69,7 @@ const BenThuHuong = () => {
           gap="4px"
           label="Chuyển duyệt"
           startIcon={<SendIcon />}
-          color="#181818"
-          bgcolor="#F0B41C"
-          hoverColor="#181818"
-          hoverBgcolor="#F0B41C"
+        
         />
         <Buttonn
           fs={18}
@@ -86,10 +77,7 @@ const BenThuHuong = () => {
           w="155px"
           gap="4px"
           label="Quay lại"
-          color="#DCA20F"
-          bgcolor="#FFFFFF"
-          hoverColor="#DCA20F"
-          hoverBgcolor="#FFFFFF"
+         
         />
       </Grid>
     </Box>

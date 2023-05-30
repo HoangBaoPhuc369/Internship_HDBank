@@ -1,5 +1,4 @@
-import { Box, Grid, Typography } from "@mui/material";
-import React from "react";
+import { Box,  Grid, Typography } from "@mui/material";
 import TextFieldd from "../../../../components/Custom/TextField";
 import ClearIcon from "@mui/icons-material/Clear";
 import Buttonn from "../../../../components/Custom/Button";
@@ -29,10 +28,7 @@ const ThongTinCBTuVanTT = () => {
           gap="4px"
           startIcon={<SearchIcon />}
           label="Kiểm tra"
-          color="#181818"
-          bgcolor="#F0B41C"
-          hoverColor="#181818"
-          hoverBgcolor="#F0B41C"
+         
         />
       </Grid>
       <Grid xs={12} pt={2} item display={"flex"} alignItems={"center"}>

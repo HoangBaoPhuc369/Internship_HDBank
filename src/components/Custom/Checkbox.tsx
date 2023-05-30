@@ -1,18 +1,15 @@
 import { Checkbox, FormControlLabel } from "@mui/material";
-import React from "react";
 
 interface CheckboxProps {
   label: string;
-  required: boolean;
 }
 
 const CheckBox = (props: CheckboxProps) => {
-  const { label, required } = props;
+  const { label } = props;
   return (
     <FormControlLabel
       control={
         <Checkbox
-          required={required}
           sx={{
             color: "#181818",
             "&.Mui-checked": {
